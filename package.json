@@ -1,0 +1,27 @@
+{
+  "name": "vuepress-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "dev-force": "vuepress dev docs --clean-cache",
+    "build": "vuepress build docs",
+    "prettier": "prettier -w .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,css,md}": "prettier --write"
+  },
+  "private": true,
+  "license": "MIT",
+  "author": "Naomi",
+  "devDependencies": {
+    "@vuepress/plugin-search": "2.0.0-beta.38",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "vuepress": "2.0.0-beta.39",
+    "vuepress-theme-hope": "^2.0.0-beta.47"
+  }
+}

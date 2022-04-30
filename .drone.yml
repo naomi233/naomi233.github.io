@@ -1,0 +1,29 @@
+kind: pipeline
+type: docker
+name: Docs deploy
+
+trigger:
+  branch:
+  - master
+
+volumes:
+  - name: node_modules
+    host:
+      path: /tmp/vuepress/node_modules
+  - name: deploy
+    host:
+      path: /root/html/naomi.pub
+
+steps:
+  - name: Build & Deploy
+    image: node:16
+    volumes:
+      - name: node_modules
+        path: /drone/src/node_modules
+      - name: deploy
+        path: /drone/src/dist
+    commands:
+      - npm config set registry https://mirrors.tencent.com/npm/
+      - npm config list
+      - npm install
+      - npm run build
