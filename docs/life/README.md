@@ -1,11 +1,11 @@
 ---
-title: 随想笔记
-icon: alias
 index: false
 article: false
+title: 随想笔记
+icon: alias
 dir:
   text: 随想笔记
   icon: alias
-  link: false
-  index: false
+  collapsable: false
+  link: true
 ---
