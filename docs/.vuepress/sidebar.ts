@@ -9,7 +9,6 @@ export default defineSidebarConfig({
       icon: 'creative',
       prefix: '',
       link: '',
-      collapsable: true,
       children: 'structure',
     },
   ],
