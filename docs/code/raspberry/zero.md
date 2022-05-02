@@ -1,0 +1,101 @@
+---
+title: 上手树莓派之 Docker
+date: 2022-02-04
+category:
+  - 树莓派
+tag:
+  - Docker
+---
+
+## 安装系统
+
+树莓派系统现在[支持 64 位](https://www.raspberrypi.com/news/raspberry-pi-os-64-bit)了，使用 arm64 指令集，速度更快。
+
+SD 卡建议使用 C10 U3 A1 以上标准的卡，以便系统流畅运行。
+
+使用[Raspberry Pi Imager](https://www.raspberrypi.com/documentation/computers/getting-started.html#using-raspberry-pi-imager)选择对应的系统烧录安装至 SD 卡，我这里选择的是[Raspberry Pi OS Lite (64-bit)](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit)。
+
+## 系统配置
+
+### 开启 SSH
+
+由于树莓派默认关闭 SSH，要在 boot 区新建 SSH 文件以开启 SSH。
+
+打开 **我的电脑**，在引导区（boot 盘）新建`SSH`文件。
+
+### 网络配置 WiFi
+
+打开 **我的电脑**，在引导区（boot 盘）新建`wpa_supplicant.conf`文件，根据需要修改内容
+
+```conf
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+country=CN
+update_config=1
+
+network={
+ ssid="WiFi名称"
+ psk="WiFi密码"
+}
+```
+
+### IP 地址
+
+SSH 连接需要用到 IP，可以直接查看路由器，进阶玩法可以参考[相关资料](https://www.raspberrypi.com/documentation/computers/remote-access.html#introduction-to-remote-access)。
+
+## 更换国内镜像源
+
+使用国内镜像源提高软件下载的速度
+由于`Raspberry Pi OS 64-bit`的上游是使用`Debian`源进行编译，所以应该使用 Debian 的国内镜像源，下面使用的是[清华源](https://mirrors.tuna.tsinghua.edu.cn)。
+
+1. 修改 /etc/apt/sources.list
+
+   ```bash
+   sudo nano /etc/apt/sources.list
+   ```
+
+   替换为以下内容
+
+   ```language
+   # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+   deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
+   deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
+
+   deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
+
+   deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free
+   ```
+
+2. 修改 /etc/apt/sources.list.d/raspi.list
+
+   ```bash
+   sudo nano /etc/apt/sources.list.d/raspi.list
+   ```
+
+   替换为以下内容
+
+   ```language
+   deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ bullseye main
+   ```
+
+## 系统升级
+
+```bash
+sudo apt update
+sudo apt full-upgrade
+sudo rpi-update
+sudo reboot
+```
+
+## 安装 Docker
+
+## 安装 Pip
+
+pip-review
+
+## Pinout
+
+<https://pinout.xyz/>
