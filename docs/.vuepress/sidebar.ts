@@ -1,13 +1,16 @@
 import { defineSidebarConfig } from 'vuepress-theme-hope'
 
-export default defineSidebarConfig([
-  '/',
-  {
-    text: '使用教程',
-    icon: 'creative',
-    prefix: '/guide/',
-    link: '/guide/',
-    collapsable: true,
-    children: 'structure',
-  },
-])
+export default defineSidebarConfig({
+  '/code/': 'structure',
+  '/life/': 'structure',
+  '/guide/': [
+    {
+      text: '主题教程',
+      icon: 'creative',
+      prefix: '',
+      link: '',
+      collapsable: true,
+      children: 'structure',
+    },
+  ],
+})

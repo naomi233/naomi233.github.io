@@ -39,6 +39,7 @@ export default defineThemeConfig({
   encrypt: {
     config: {
       '/guide/encrypt.html': ['1234'],
+      '/life/': ['1234'],
     },
   },
 
