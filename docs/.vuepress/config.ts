@@ -1,7 +1,7 @@
-import { defineHopeConfig } from 'vuepress-theme-hope'
-import themeConfig from './themeConfig'
+import { defineUserConfig } from 'vuepress'
+import theme from './themeConfig'
 
-export default defineHopeConfig({
+export default defineUserConfig({
   lang: 'zh-CN',
   dest: './dist',
   title: 'Naomi の 樱花庄',
@@ -28,5 +28,5 @@ export default defineHopeConfig({
       },
     ],
   ],
-  themeConfig,
+  theme,
 })
