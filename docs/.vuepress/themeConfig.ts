@@ -39,13 +39,11 @@ export default hopeTheme({
   encrypt: {
     config: {
       '/guide/encrypt.html': ['1234'],
-      '/life/': ['1234'],
+      '/life/encrypt.html': ['1234'],
     },
   },
 
   plugins: {
-    copyCode: {},
-
     blog: {
       autoExcerpt: true,
     },
@@ -57,19 +55,12 @@ export default hopeTheme({
       },
     },
 
-    search: {
-      // https://v2.vuepress.vuejs.org/zh/reference/plugin/search.html
-      // 排除首页
-      isSearchable: (page) => page.path !== '/',
-      maxSuggestions: 10,
-      hotKeys: ['s', '/'],
-      // 用于在页面的搜索索引中添加额外字段
-      getExtraFields: () => [],
-      locales: {
-        '/': {
-          placeholder: '搜索',
-        },
-      },
+    comment: {
+      type: 'giscus',
+      repo: 'naomi233/naomi233.github.io',
+      repoId: 'R_kgDOHROM7A',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOHROM7M4CO91k',
     },
   },
 })

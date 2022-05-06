@@ -7,7 +7,6 @@ export default sidebar({
     {
       text: '主题教程',
       icon: 'creative',
-      prefix: '',
       link: '',
       children: 'structure',
     },
