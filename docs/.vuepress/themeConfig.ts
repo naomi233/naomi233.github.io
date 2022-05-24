@@ -23,7 +23,7 @@ export default hopeTheme({
   },
 
   pure: true,
-  iconPrefix: 'iconfont icon-',
+  iconAssets: 'iconfont',
 
   docsDir: 'docs',
   docsBranch: 'master',

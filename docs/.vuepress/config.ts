@@ -21,13 +21,6 @@ export default defineUserConfig({
       s.parentNode.insertBefore(hm, s);
     })();`,
     ],
-    [
-      'link',
-      {
-        rel: 'stylesheet',
-        href: '//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css',
-      },
-    ],
   ],
   plugins: [
     searchPlugin({
