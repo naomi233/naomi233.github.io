@@ -7,5 +7,5 @@ dir:
   text: 数据库
   icon: mysql
   link: false
-  index: 3
+  order: 3
 ---
