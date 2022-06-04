@@ -7,5 +7,5 @@ dir:
   text: Java
   icon: java
   link: false
-  index: 1
+  order: 1
 ---

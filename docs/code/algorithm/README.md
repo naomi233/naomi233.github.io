@@ -7,5 +7,5 @@ dir:
   text: 算法
   icon: code
   link: false
-  index: 2
+  order: 2
 ---
