@@ -22,7 +22,6 @@ export default hopeTheme({
     },
   },
 
-  pure: true,
   iconAssets: 'iconfont',
 
   docsDir: 'docs',
