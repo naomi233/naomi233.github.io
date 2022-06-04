@@ -7,5 +7,5 @@ dir:
   text: 网络
   icon: network
   link: false
-  index: 3
+  order: 3
 ---
