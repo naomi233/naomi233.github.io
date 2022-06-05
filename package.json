@@ -1,20 +1,23 @@
 {
   "name": "vuepress-starter",
   "version": "1.0.0",
-  "author": "Naomi",
+  "private": true,
   "description": "",
   "license": "MIT",
-  "private": true,
+  "author": "Naomi",
   "main": "index.js",
   "scripts": {
+    "build": "vuepress build docs",
     "dev": "vuepress dev docs",
     "dev-force": "vuepress dev docs --clean-cache",
-    "build": "vuepress build docs",
-    "prettier": "prettier -w .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier -w ."
   },
   "lint-staged": {
-    "*.{js,ts,css,md}": "prettier --write"
+    "*.{js,ts,scss,md}": "prettier --write",
+    "package.json": [
+      "sort-package-json"
+    ]
   },
   "config": {
     "commitizen": {
@@ -30,6 +33,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.0",
     "prettier": "^2.6.2",
+    "sort-package-json": "^1.57.0",
     "vuepress": "^2.0.0-beta.46",
     "vuepress-theme-hope": "^2.0.0-beta.77"
   }
