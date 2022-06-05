@@ -61,5 +61,11 @@ export default hopeTheme({
       category: 'Announcements',
       categoryId: 'DIC_kwDOHROM7M4CO91k',
     },
+
+    pwa: {
+      update: 'hint',
+      favicon: '/favicon.ico',
+      appendBase: true,
+    },
   },
 })
