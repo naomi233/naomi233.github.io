@@ -1,15 +1,28 @@
 // .commitlintrc.js
 const fs = require('fs')
 const path = require('path')
+const { execSync } = require('child_process')
 
-const packages = fs.readdirSync(path.resolve(__dirname, 'docs')).filter((item) => !/(?<=^[a-zA-Z0-9]+)\.md$/.test(item))
-packages.shift()
+// just find directory
+const packages = fs
+  .readdirSync(path.resolve(__dirname, 'docs/code'), { withFileTypes: true })
+  .filter((item) => item.isDirectory())
+  .map((item) => item.name)
+
+// precomputed scope
+const scopeComplete = execSync('git status --porcelain || true')
+  .toString()
+  .trim()
+  .split('\n')
+  .find((r) => ~r.indexOf('M docs/code'))
+  ?.replace(/(\/)/g, '%%')
+  ?.match(/docs%%code%%((\w|-)*)/)?.[1]
 
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
   rules: {
     // @see: https://commitlint.js.org/#/reference-rules
-    'scope-enum': [1, 'always', ['theme', ...packages]],
+    'scope-enum': [1, 'always', [...packages, 'life', 'theme']],
   },
   prompt: {
     messages: {
@@ -62,33 +75,8 @@ module.exports = {
       { value: 'revert', name: 'revert:   ⏪️  Reverts a previous commit | 回退代码', emoji: ':rewind:' },
     ],
     useEmoji: true,
-    themeColorCode: '',
     // enableMultipleScopes: true,
-    scopeEnumSeparator: ',',
-    allowCustomScopes: true,
-    allowEmptyScopes: true,
-    customScopesAlign: 'bottom',
-    customScopesAlias: 'custom',
-    emptyScopesAlias: 'empty',
-    upperCaseSubject: false,
-    allowBreakingChanges: ['feat', 'fix'],
-    breaklineNumber: 100,
-    breaklineChar: '|',
-    skipQuestions: [],
-    issuePrefixs: [{ value: 'closed', name: 'closed:   ISSUES has been processed' }],
-    customIssuePrefixsAlign: 'top',
-    emptyIssuePrefixsAlias: 'skip',
-    customIssuePrefixsAlias: 'custom',
-    allowCustomIssuePrefixs: true,
-    allowEmptyIssuePrefixs: true,
-    confirmColorize: true,
-    maxHeaderLength: Infinity,
-    maxSubjectLength: Infinity,
-    minSubjectLength: 0,
-    scopeOverrides: undefined,
-    defaultBody: '',
-    defaultIssues: '',
-    defaultScope: '',
-    defaultSubject: '',
+    defaultScope: scopeComplete,
+    customScopesAlign: !scopeComplete ? 'top' : 'bottom',
   },
 }
