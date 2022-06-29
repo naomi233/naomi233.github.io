@@ -16,7 +16,7 @@ volumes:
 
 steps:
   - name: Build & Deploy
-    image: node:16
+    image: node:18
     volumes:
       - name: node_modules
         path: /drone/src/node_modules
