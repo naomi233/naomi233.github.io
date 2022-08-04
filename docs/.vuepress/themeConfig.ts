@@ -57,9 +57,9 @@ export default hopeTheme({
     comment: {
       provider: 'Giscus',
       repo: 'naomi233/naomi233.github.io',
-      repoId: 'R_kgDOHROM7A',
+      repoId: 'R_kgDOHuvYyA',
       category: 'Announcements',
-      categoryId: 'DIC_kwDOHROM7M4CO91k',
+      categoryId: 'DIC_kwDOHuvYyM4CQew7',
     },
 
     pwa: {
