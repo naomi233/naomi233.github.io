@@ -17,6 +17,8 @@ volumes:
 steps:
   - name: Build & Deploy
     image: node:16
+    environment:
+      NODE_OPTIONS: --max_old_space_size=2048
     volumes:
       - name: node_modules
         path: /drone/src/node_modules
