@@ -48,10 +48,14 @@ export default hopeTheme({
     },
 
     mdEnhance: {
-      enableAll: true,
-      presentation: {
-        plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
-      },
+      sub: true,
+      sup: true,
+      mark: true,
+      echarts: true,
+      mermaid: true,
+      footnote: true,
+      tasklist: true,
+      container: true,
     },
 
     comment: {
@@ -65,7 +69,9 @@ export default hopeTheme({
     pwa: {
       update: 'hint',
       favicon: '/favicon.ico',
-      appendBase: true,
+
+      // 部署到子目录才开启
+      // appendBase: true,
     },
   },
 })
