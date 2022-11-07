@@ -3,7 +3,7 @@ home: true
 layout: Blog
 icon: home
 title: 主页
-bgImage: https://api.ixiaowai.cn/gqapi/gqapi.php
+bgImage: https://api.dujin.org/pic/yuanshen/
 heroImage: /logo.png
 heroText: Naomi の 樱花庄
 heroFullScreen: true
