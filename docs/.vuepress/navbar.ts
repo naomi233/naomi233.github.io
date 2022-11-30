@@ -8,11 +8,11 @@ export default navbar([
   {
     text: 'Naomi 相册',
     icon: 'pic',
-    link: 'https://ghs.naomi.pub',
+    link: 'https://ghs.naomi.plus',
   },
   {
     text: 'Gitea',
     icon: 'discover',
-    link: 'https://git.naomi.pub',
+    link: 'https://git.naomi.plus',
   },
 ])
