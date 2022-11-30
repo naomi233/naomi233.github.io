@@ -4,11 +4,11 @@ import sidebar from './sidebar'
 
 export default hopeTheme({
   logo: '/logo.png',
-  hostname: 'https://naomi.pub',
+  hostname: 'https://naomi.plus',
 
   author: {
     name: 'Naomi',
-    url: 'https://naomi.pub',
+    url: 'https://naomi.plus',
   },
 
   blog: {
@@ -29,7 +29,7 @@ export default hopeTheme({
   repo: 'naomi233/naomi233.github.io',
 
   displayFooter: true,
-  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19151060号</a>',
+  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19151060号-2</a>',
 
   navbar,
   sidebar,

@@ -12,7 +12,7 @@ volumes:
       path: /tmp/vuepress/node_modules
   - name: deploy
     host:
-      path: /root/html/naomi.pub
+      path: /root/html/naomi.plus
 
 steps:
   - name: Build & Deploy
