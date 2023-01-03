@@ -54,7 +54,7 @@ export default hopeTheme({
       footnote: true,
       tasklist: true,
       container: true,
-      imageLazyload: true,
+      imgLazyload: true,
     },
 
     comment: {
