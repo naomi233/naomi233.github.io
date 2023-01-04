@@ -9,18 +9,11 @@ export default defineUserConfig({
   description: 'Naomi の 樱花庄',
   shouldPrefetch: false,
   head: [
+    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-37N7CLH1B1' }],
     [
       'script',
       {},
-      `var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?c738fb34dd6a4a2943ee1b4623a6ed49";
-      var s = document.getElementsByTagName("script")[0]; 
-        var s = document.getElementsByTagName("script")[0]; 
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();`,
+      `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-37N7CLH1B1');`,
     ],
   ],
   plugins: [
