@@ -34,7 +34,7 @@ export default hopeTheme({
 
   navbar,
   sidebar,
-  pageInfo: ['Author', 'Category', 'Tag', 'Date', 'Original', 'Word'],
+  pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'Category', 'Tag'],
 
   encrypt: {
     config: {
