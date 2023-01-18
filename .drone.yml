@@ -28,5 +28,5 @@ steps:
       - npm config set registry https://mirrors.tencent.com/npm/
       - npm config list
       - npm ci
-      - sed -i '/footer/s/MIT Licensed/<a href="https:\/\/beian.miit.gov.cn\/" target="_blank">粤ICP备19151060号-2<\/a>/' docs/.vuepress/themeConfig.ts
+      - sed -i 's#MIT Licensed#<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19151060号-2</a>#' docs/.vuepress/themeConfig.ts
       - npm run build

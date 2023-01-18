@@ -75,8 +75,9 @@ module.exports = {
       { value: 'revert', name: 'revert:   ⏪️  Reverts a previous commit | 回退代码', emoji: ':rewind:' },
     ],
     useEmoji: true,
-    // enableMultipleScopes: true,
+    allowCustomScopes: true,
     defaultScope: scopeComplete,
+    // enableMultipleScopes: true,
     customScopesAlign: !scopeComplete ? 'top' : 'bottom',
   },
 }
