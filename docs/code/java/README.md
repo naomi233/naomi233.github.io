@@ -9,3 +9,5 @@ dir:
   link: false
   order: 1
 ---
+
+<AutoCatalog />

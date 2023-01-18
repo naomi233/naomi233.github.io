@@ -19,6 +19,7 @@ export default hopeTheme({
     medias: {
       Email: 'mailto:mangogo.naomi@qq.com',
       GitHub: 'https://github.com/Henvy-Mango',
+      Gitee: 'https://gitee.com/Henvy-Mango',
     },
   },
 
@@ -29,7 +30,7 @@ export default hopeTheme({
   repo: 'naomi233/naomi233.github.io',
 
   displayFooter: true,
-  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19151060号-2</a>',
+  footer: 'MIT Licensed',
 
   navbar,
   sidebar,
@@ -37,12 +38,13 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      '/guide/encrypt.html': ['1234'],
       '/life/encrypt.html': ['1234'],
     },
   },
 
   plugins: {
+    autoCatalog: true,
+
     blog: true,
 
     mdEnhance: {
