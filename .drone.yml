@@ -7,9 +7,6 @@ trigger:
   - master
 
 volumes:
-  - name: node_modules
-    host:
-      path: /tmp/vuepress/node_modules
   - name: deploy
     host:
       path: /root/html/naomi.plus
@@ -20,8 +17,6 @@ steps:
     environment:
       NODE_OPTIONS: --max_old_space_size=2048
     volumes:
-      - name: node_modules
-        path: /drone/src/node_modules
       - name: deploy
         path: /drone/src/dist
     commands:
