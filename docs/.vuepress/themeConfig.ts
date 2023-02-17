@@ -4,11 +4,11 @@ import sidebar from './sidebar'
 
 export default hopeTheme({
   logo: '/logo.png',
-  hostname: 'https://naomi.plus',
+  hostname: 'https://www.naomi.plus',
 
   author: {
     name: 'Naomi',
-    url: 'https://naomi.plus',
+    url: 'https://www.naomi.plus',
   },
 
   blog: {
@@ -57,14 +57,6 @@ export default hopeTheme({
       tasklist: true,
       container: true,
       imgLazyload: true,
-    },
-
-    comment: {
-      provider: 'Giscus',
-      repo: 'naomi233/naomi233.github.io',
-      repoId: 'R_kgDOHuvYyA',
-      category: 'Announcements',
-      categoryId: 'DIC_kwDOHuvYyM4CQew7',
     },
 
     pwa: {
