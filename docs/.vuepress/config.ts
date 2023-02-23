@@ -7,7 +7,6 @@ export default defineUserConfig({
   dest: './dist',
   title: 'Naomi の 樱花庄',
   description: 'Naomi の 樱花庄',
-  shouldPrefetch: false,
   head: [
     ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-37N7CLH1B1' }],
     [
