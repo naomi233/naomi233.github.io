@@ -59,12 +59,8 @@ export default hopeTheme({
       imgLazyload: true,
     },
 
-    pwa: {
-      update: 'hint',
-      favicon: '/favicon.ico',
-
-      // 部署到子目录才开启
-      // appendBase: true,
+    feed: {
+      rss: true,
     },
   },
 })
