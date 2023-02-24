@@ -41,7 +41,9 @@ export default hopeTheme({
   plugins: {
     autoCatalog: true,
 
-    blog: true,
+    blog: {
+      excerptLength: 30,
+    },
 
     mdEnhance: {
       sub: true,
