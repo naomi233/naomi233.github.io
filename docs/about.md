@@ -1,10 +1,7 @@
 ---
-icon: markdown
 title: 关于我
-
-# 文章列表中不显示
+icon: markdown
 article: false
-# 侧边栏不显示
 index: false
 ---
 
