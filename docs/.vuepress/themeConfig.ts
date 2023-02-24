@@ -20,6 +20,7 @@ export default hopeTheme({
       Email: 'mailto:mangogo.naomi@qq.com',
       GitHub: 'https://github.com/Henvy-Mango',
       Gitee: 'https://gitee.com/Henvy-Mango',
+      RSS: 'https://www.naomi.plus/rss.xml',
     },
   },
 
@@ -34,13 +35,8 @@ export default hopeTheme({
 
   navbar,
   sidebar,
-  pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'Category', 'Tag'],
 
-  encrypt: {
-    config: {
-      '/life/encrypt.html': ['1234'],
-    },
-  },
+  pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'Category', 'Tag'],
 
   plugins: {
     autoCatalog: true,

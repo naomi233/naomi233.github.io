@@ -1,11 +1,11 @@
 ---
+title: 主页
+icon: home
 home: true
 layout: BlogHome
-icon: home
-title: 主页
-bgImage: https://api.dujin.org/pic/yuanshen/
+heroFullScreen: true
 heroImage: /logo.png
 heroText: Naomi の 樱花庄
-heroFullScreen: true
 tagline: 愚人不努力，懒人盼巅峰
+bgImage: https://api.dujin.org/pic/yuanshen/
 ---
