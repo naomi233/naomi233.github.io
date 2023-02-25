@@ -1,4 +1,5 @@
 import { defineUserConfig } from 'vuepress'
+import { removePWAPlugin } from 'vuepress-plugin-remove-pwa'
 import { searchProPlugin } from 'vuepress-plugin-search-pro'
 import theme from './themeConfig'
 
@@ -16,6 +17,7 @@ export default defineUserConfig({
     ],
   ],
   plugins: [
+    removePWAPlugin(),
     searchProPlugin({
       // 索引全部内容
       indexContent: true,
