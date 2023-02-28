@@ -22,6 +22,7 @@ export default hopeTheme({
       Gitee: 'https://gitee.com/Henvy-Mango',
       RSS: 'https://www.naomi.plus/rss.xml',
     },
+    articleInfo: ['Author', 'Date', 'Word', 'Category', 'Tag'],
   },
 
   iconAssets: 'iconfont',
