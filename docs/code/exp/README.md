@@ -1,10 +1,10 @@
 ---
-title: 踩坑记录
+title: 实践笔记
 icon: exercise
 index: false
 article: false
 dir:
-  text: 踩坑记录
+  text: 实践笔记
   icon: exercise
   link: false
   order: -1
