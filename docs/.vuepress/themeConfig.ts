@@ -17,9 +17,8 @@ export default hopeTheme({
     avatar: '/avatar.png',
     sidebarDisplay: 'mobile',
     medias: {
-      Email: 'mailto:mangogo.naomi@qq.com',
+      Telegram: 'https://t.me/naomi233_bot',
       GitHub: 'https://github.com/Henvy-Mango',
-      Gitee: 'https://gitee.com/Henvy-Mango',
       RSS: 'https://www.naomi.plus/rss.xml',
     },
     articleInfo: ['Author', 'Date', 'Word', 'Category', 'Tag'],
