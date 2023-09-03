@@ -17,10 +17,19 @@
     "*.{js,ts,scss,md}": "prettier --write",
     "package.json": "sort-package-json"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "17.7.1",
+    "@commitlint/config-conventional": "17.7.0",
     "@vuepress/client": "2.0.0-beta.67",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.7.1",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
+    "lint-staged": "^14.0.1",
     "nano-staged": "^0.8.0",
     "prettier": "^3.0.3",
     "sort-package-json": "^2.5.1",
