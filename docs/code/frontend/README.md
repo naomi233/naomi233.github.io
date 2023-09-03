@@ -1,13 +1,13 @@
 ---
-title: Java
-icon: java
+title: 前端
+icon: react
 index: false
 article: false
 dir:
-  text: Java
-  icon: java
+  text: 前端
+  icon: react
   link: false
-  order: 1
+  order: 3
 ---
 
 <AutoCatalog />
