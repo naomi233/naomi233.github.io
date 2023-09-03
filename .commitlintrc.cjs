@@ -76,9 +76,9 @@ module.exports = {
     useEmoji: true,
     emojiAlign: 'center',
     // enableMultipleScopes: true,
-    allowEmptyScopes: false,
+    allowEmptyScopes: true,
     allowCustomScopes: false,
     defaultScope: scopeComplete,
-    // customScopesAlign: !scopeComplete ? 'top' : 'bottom',
+    customScopesAlign: !scopeComplete ? 'top-bottom' : 'bottom',
   },
 }
