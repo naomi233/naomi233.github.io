@@ -1,13 +1,12 @@
 import { defineUserConfig } from 'vuepress'
-import { removePWAPlugin } from 'vuepress-plugin-remove-pwa'
 import { searchProPlugin } from 'vuepress-plugin-search-pro'
-import theme from './themeConfig'
+import theme from './theme.js'
 
 export default defineUserConfig({
   lang: 'zh-CN',
   dest: './dist',
-  title: 'Naomi の 樱花庄',
-  description: 'Naomi の 樱花庄',
+  title: 'Naomi樱花庄',
+  description: 'Naomi樱花庄',
   head: [
     ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-37N7CLH1B1' }],
     [
@@ -17,7 +16,6 @@ export default defineUserConfig({
     ],
   ],
   plugins: [
-    removePWAPlugin(),
     searchProPlugin({
       // 索引全部内容
       indexContent: true,

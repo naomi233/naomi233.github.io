@@ -1,6 +1,6 @@
 ---
 title: 关于我
-icon: markdown
+cover: /assets/images/avatar.png
 article: false
 index: false
 ---
