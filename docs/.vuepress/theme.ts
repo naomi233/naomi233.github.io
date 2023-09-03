@@ -1,6 +1,6 @@
 import { hopeTheme } from 'vuepress-theme-hope'
-import navbar from './navbar'
-import sidebar from './sidebar'
+import navbar from './navbar.js'
+import sidebar from './sidebar.js'
 
 export default hopeTheme({
   logo: '/logo.png',
@@ -14,12 +14,12 @@ export default hopeTheme({
   blog: {
     intro: '/about',
     roundAvatar: true,
-    avatar: '/avatar.png',
+    avatar: '/assets/images/avatar.png',
     sidebarDisplay: 'mobile',
     medias: {
       Telegram: 'https://t.me/naomi233_bot',
       GitHub: 'https://github.com/Henvy-Mango',
-      RSS: 'https://www.naomi.plus/rss.xml',
+      RSS: '/rss.xml',
     },
     articleInfo: ['Author', 'Date', 'Word', 'Category', 'Tag'],
   },
@@ -37,6 +37,10 @@ export default hopeTheme({
   sidebar,
 
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'Category', 'Tag'],
+
+  metaLocales: {
+    editLink: '在 GitHub 上编辑此页',
+  },
 
   plugins: {
     autoCatalog: true,

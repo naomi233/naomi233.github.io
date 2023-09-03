@@ -1,41 +1,22 @@
 {
-  "name": "vuepress-starter",
-  "version": "1.0.0",
-  "private": true,
-  "description": "",
+  "name": "vuepress-theme-hope-template",
+  "version": "2.0.0",
+  "description": "A project of vuepress-theme-hope",
   "license": "MIT",
-  "author": "Naomi",
-  "main": "index.js",
   "scripts": {
     "build": "vuepress build docs",
+    "clean-dev": "vuepress dev docs --clean-cache",
     "dev": "vuepress dev docs",
-    "dev-force": "vuepress dev docs --clean-cache",
-    "prepare": "husky install",
-    "prettier": "prettier -w ."
-  },
-  "lint-staged": {
-    "*.{js,ts,scss,md}": "prettier --write",
-    "package.json": [
-      "sort-package-json"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git"
-    }
+    "prettier": "prettier -w .",
+    "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.6",
-    "commitizen": "^4.3.0",
-    "cz-git": "^1.7.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "prettier": "^3.0.0",
+    "@vuepress/client": "2.0.0-beta.67",
+    "prettier": "^3.0.3",
     "sort-package-json": "^2.5.1",
-    "vuepress": "2.0.0-beta.66",
-    "vuepress-plugin-remove-pwa": "^2.0.0-beta.233",
-    "vuepress-plugin-search-pro": "^2.0.0-beta.233",
-    "vuepress-theme-hope": "^2.0.0-beta.233"
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.67",
+    "vuepress-plugin-search-pro": "2.0.0-beta.236",
+    "vuepress-theme-hope": "2.0.0-beta.236"
   }
 }

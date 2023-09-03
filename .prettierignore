@@ -1,5 +1,14 @@
-.husky
-.temp
-.cache
-dist
-node_modules
+# Vuepress Cache
+docs/.vuepress/.cache/
+# Vuepress Temp
+docs/.vuepress/.temp/
+# Vuepress Output
+dist/
+# Lib files
+docs/.vuepress/public/assets/lib/
+
+# Node modules
+node_modules/
+
+# pnpm lock file
+pnpm-lock.yaml

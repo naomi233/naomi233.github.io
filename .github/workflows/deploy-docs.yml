@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "build"
+  group: 'build'
   cancel-in-progress: true
 
 jobs:
@@ -23,27 +23,28 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
 
-      - name: Restore cache
-        uses: actions/cache@v3
-        id: node-modules
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v2
         with:
-          path: node_modules/
-          key: ${{ runner.os }}-node-modules-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-modules-
+          run_install: true
+          version: 8
 
-      - name: Setup dependencies
-        if: steps.node-modules.outputs.cache-hit != 'true'
-        run: npm ci
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: Build artifact
         id: build
         env:
-          NODE_OPTIONS: --max_old_space_size=4096
-        run: |
-          sed -i '#https://#s#www.naomi.plus#naomi233.github.io#' docs/.vuepress/themeConfig.ts
-          npm run build
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          sed -i '#https://#s#www.naomi.plus#naomi233.github.io#' docs/.vuepress/theme.ts
+          pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

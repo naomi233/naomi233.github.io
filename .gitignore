@@ -1,4 +1,12 @@
-node_modules
-.temp
-.cache
-dist
+# Node modules
+node_modules/
+
+# macOS
+.DS_Store
+
+# Vuepress Cache
+docs/.vuepress/.cache/
+# Vuepress Temp
+docs/.vuepress/.temp/
+# Vuepress Output
+dist/

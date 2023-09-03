@@ -4,7 +4,7 @@ name: Docs deploy
 
 trigger:
   branch:
-  - master
+    - master
 
 volumes:
   - name: deploy
