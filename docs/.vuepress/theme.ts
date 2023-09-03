@@ -19,7 +19,7 @@ export default hopeTheme({
     medias: {
       Telegram: 'https://t.me/naomi233_bot',
       GitHub: 'https://github.com/Henvy-Mango',
-      RSS: '/rss.xml',
+      RSS: 'https://www.naomi.plus/rss.xml',
     },
     articleInfo: ['Author', 'Date', 'Word', 'Category', 'Tag'],
   },

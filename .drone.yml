@@ -13,15 +13,15 @@ volumes:
 
 steps:
   - name: Build & Deploy
-    image: node:16
+    image: gplane/pnpm:8-node18
     environment:
       NODE_OPTIONS: --max_old_space_size=2048
     volumes:
       - name: deploy
         path: /drone/src/dist
     commands:
-      - npm config set registry https://mirrors.tencent.com/npm/
-      - npm config list
-      - npm ci
-      - sed -i 's#MIT Licensed#<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19151060号-2</a>#' docs/.vuepress/themeConfig.ts
-      - npm run build
+      - pnpm config set registry https://mirrors.tencent.com/npm/
+      - pnpm config list
+      - pnpm install --frozen-lockfile
+      - sed -i 's#MIT Licensed#<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19151060号-2</a>#' docs/.vuepress/theme.ts
+      - pnpm run build
