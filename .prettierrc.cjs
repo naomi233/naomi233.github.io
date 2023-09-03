@@ -1,4 +1,4 @@
-// prettier.config.js or .prettierrc.js
+/** @type {import('prettier').Config} */
 module.exports = {
   // 一行最多多少个字符
   printWidth: 120,
@@ -19,7 +19,7 @@ module.exports = {
   // 在对象文字中的括号之间打印空格
   bracketSpacing: true,
   // 将 > 的多行HTML元素放在最后一行的末尾，而不是单独放在下一行(不适用于自关闭元素)。
-  bracketSameLine: true,
+  bracketSameLine: false,
   // 在单独的箭头函数参数周围包括括号 always：(x) => x \ avoid：x => x
   arrowParens: 'always',
   // 使用默认的折行标准 always\never\preserve
