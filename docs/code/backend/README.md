@@ -7,7 +7,7 @@ dir:
   text: 后端
   icon: back-stage
   link: false
-  order: 1
+  order: 2
 ---
 
 <AutoCatalog />
