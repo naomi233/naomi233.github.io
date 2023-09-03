@@ -43,7 +43,7 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
-          sed -i '#https://#s#www.naomi.plus#naomi233.github.io#' docs/.vuepress/theme.ts
+          sed -i 's/www.naomi.plus/naomi233.github.io/' docs/.vuepress/theme.ts
           pnpm run build
 
       - name: Upload artifact
