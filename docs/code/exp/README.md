@@ -1,11 +1,11 @@
 ---
 title: 踩坑记录
-icon: exercise
+icon: template
 index: false
 article: false
 dir:
   text: 踩坑记录
-  icon: exercise
+  icon: template
   link: false
   order: -1
 ---
