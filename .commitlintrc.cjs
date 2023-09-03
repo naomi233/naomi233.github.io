@@ -14,9 +14,8 @@ const scopeComplete = execSync('git status --porcelain || true')
   .toString()
   .trim()
   .split('\n')
-  .find((r) => ~r.indexOf('M docs/code'))
-  ?.replace(/(\/)/g, '%%')
-  ?.match(/docs%%code%%((\w|-)*)/)?.[1]
+  .find((r) => /docs\/code\//.test(r))
+  ?.match(/docs\/code\/(\w+)\/(.+)\.md/)?.[1]
 
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
@@ -80,6 +79,6 @@ module.exports = {
     allowEmptyScopes: false,
     allowCustomScopes: false,
     defaultScope: scopeComplete,
-    customScopesAlign: !scopeComplete ? 'top' : 'bottom',
+    // customScopesAlign: !scopeComplete ? 'top' : 'bottom',
   },
 }
