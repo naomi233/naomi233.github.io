@@ -1,17 +1,27 @@
 {
   "name": "vuepress-theme-hope-template",
   "version": "2.0.0",
+  "private": true,
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "build": "vuepress build docs",
     "clean-dev": "vuepress dev docs --clean-cache",
     "dev": "vuepress dev docs",
+    "prepare": "husky install",
     "prettier": "prettier -w .",
     "update-package": "pnpm dlx vp-update"
   },
+  "lint-staged": {
+    "*.{js,ts,scss,md}": "prettier --write",
+    "package.json": "sort-package-json"
+  },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.67",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "nano-staged": "^0.8.0",
     "prettier": "^3.0.3",
     "sort-package-json": "^2.5.1",
     "vue": "^3.3.4",
