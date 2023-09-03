@@ -7,7 +7,7 @@ dir:
   text: 数据库
   icon: mysql
   link: false
-  order: 3
+  order: 1
 ---
 
 <AutoCatalog />
