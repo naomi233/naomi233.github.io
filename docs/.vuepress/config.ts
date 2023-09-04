@@ -1,16 +1,16 @@
-import { defineUserConfig } from 'vuepress'
-import { searchProPlugin } from 'vuepress-plugin-search-pro'
-import theme from './theme'
+import { defineUserConfig } from "vuepress"
+import { searchProPlugin } from "vuepress-plugin-search-pro"
+import theme from "./theme"
 
 export default defineUserConfig({
-  lang: 'zh-CN',
-  dest: './dist',
-  title: 'Naomi樱花庄',
-  description: 'Naomi樱花庄',
+  lang: "zh-CN",
+  dest: "./dist",
+  title: "Naomi樱花庄",
+  description: "Naomi樱花庄",
   head: [
-    ['script', { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-37N7CLH1B1' }],
+    ["script", { async: true, src: "https://www.googletagmanager.com/gtag/js?id=G-37N7CLH1B1" }],
     [
-      'script',
+      "script",
       {},
       `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-37N7CLH1B1');`,
     ],
@@ -22,14 +22,14 @@ export default defineUserConfig({
       // 为分类和标签添加索引
       customFields: [
         {
-          name: 'category',
+          name: "category",
           getter: (page) => page.frontmatter.category,
-          formatter: '分类：$content',
+          formatter: "分类：$content",
         },
         {
-          name: 'tag',
+          name: "tag",
           getter: (page) => page.frontmatter.tag,
-          formatter: '标签：$content',
+          formatter: "标签：$content",
         },
       ],
     }),
