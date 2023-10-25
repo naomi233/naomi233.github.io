@@ -23,13 +23,13 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "17.7.1",
-    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/cli": "^18.1.0",
+    "@commitlint/config-conventional": "^18.1.0",
     "@vuepress/client": "2.0.0-beta.67",
     "commitizen": "^4.3.0",
     "cz-git": "^1.7.1",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
     "sort-package-json": "^2.6.0",
     "vue": "^3.3.7",
