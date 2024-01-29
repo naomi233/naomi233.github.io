@@ -71,12 +71,10 @@ export default hopeTheme({
       // 为分类和标签添加索引
       customFields: [
         {
-          name: "category",
           getter: (page) => page.frontmatter.category,
           formatter: "分类：$content",
         },
         {
-          name: "tag",
           getter: (page) => page.frontmatter.tag,
           formatter: "标签：$content",
         },
