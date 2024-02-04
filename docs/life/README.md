@@ -5,4 +5,4 @@ index: false
 article: false
 ---
 
-<AutoCatalog />
+<Catalog />
