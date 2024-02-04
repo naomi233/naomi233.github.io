@@ -43,7 +43,7 @@ export default hopeTheme({
   },
 
   plugins: {
-    autoCatalog: true,
+    catalog: true,
 
     blog: {
       excerptLength: 30,
