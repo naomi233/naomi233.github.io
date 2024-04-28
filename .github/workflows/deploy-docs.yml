@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - .commitlintrc.cjs
+      - .drone.yml
+      - .editorconfig
+      - .gitignore
+      - .markdownlint.json
+      - .prettierignore
+      - .prettierrc.cjs
   workflow_dispatch:
 
 permissions:
@@ -12,7 +20,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "build"
+  group: build
   cancel-in-progress: true
 
 jobs:
