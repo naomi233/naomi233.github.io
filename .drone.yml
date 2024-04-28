@@ -13,7 +13,7 @@ volumes:
 
 steps:
   - name: Build & Deploy
-    image: gplane/pnpm:8-node20
+    image: gplane/pnpm:9-node20
     environment:
       NODE_OPTIONS: --max_old_space_size=2048
     volumes:
