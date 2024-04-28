@@ -13,7 +13,6 @@ export default hopeTheme({
 
   blog: {
     intro: "/about",
-    roundAvatar: true,
     avatar: "/assets/images/avatar.png",
     sidebarDisplay: "mobile",
     medias: {
@@ -24,7 +23,7 @@ export default hopeTheme({
     articleInfo: ["Author", "Date", "Word", "Category", "Tag"],
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "iconify",
 
   docsDir: "docs",
   docsBranch: "master",
