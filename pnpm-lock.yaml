@@ -14,9 +14,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^19.2.2
         version: 19.2.2
-      '@lint-md/cli':
-        specifier: ^2.0.0
-        version: 2.0.0(eslint@8.57.0)(typescript@5.4.5)
+      '@naomi233/lint-md-cli':
+        specifier: ^2.1.6
+        version: 2.1.6(eslint@8.57.0)(typescript@5.4.5)
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.9
         version: 2.0.0-rc.9(@types/node@20.12.7)(jiti@1.21.0)(sass@1.75.0)(typescript@5.4.5)
@@ -354,13 +354,6 @@ packages:
   '@jridgewell/sourcemap-codec@1.4.15':
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  '@lint-md/cli@2.0.0':
-    resolution: {integrity: sha512-swOuQMtrEtQJpbecIQYk7bXyAvLCNO/UZBsRQTGLOggIm+fpoow5QnDY1F34Fe0lUthvxucIRpHjLzKXlk3u2Q==}
-    hasBin: true
-
-  '@lint-md/core@2.0.0':
-    resolution: {integrity: sha512-DbjU4NhmddVM2GaeUz+f+urFLt0IoTomwJglrRGuUKBCr4udpVe/rnh26R02zQKXm/+ocQ5WfU0iLCCWBsXoYA==}
-
   '@lint-md/parser@0.0.14':
     resolution: {integrity: sha512-kFFq6TowN2MBe+EFctnn6VluPWHV/9i/mHGQG/d5qGcR7EnA7JSURaxw9kQDHG11bwUK+pHOoXjSOp/6VzM/1w==}
 
@@ -589,6 +582,13 @@ packages:
     peerDependenciesMeta:
       markdown-it:
         optional: true
+
+  '@naomi233/lint-md-cli@2.1.6':
+    resolution: {integrity: sha512-5ChEkzYmnG2lD9SPhVFYdEB1VYZ6qUhOcQVX36xX8aCxLAAXbSIkU6WqQ+2GLgtVOne5FEfXAQB5HnFAwVxaIg==, tarball: https://registry.npmjs.org/@naomi233/lint-md-cli/-/lint-md-cli-2.1.6.tgz}
+    hasBin: true
+
+  '@naomi233/lint-md-core@2.1.6':
+    resolution: {integrity: sha512-EemTPbFhCxnrRSfdOBPK1H2mb2ceepr5o0nfxV/rph5V2NBJn3GcsMZuKK5+Xp4rGFmmK2AZ/+8NLkqCzDQODA==, tarball: https://registry.npmjs.org/@naomi233/lint-md-core/-/lint-md-core-2.1.6.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4118,32 +4118,6 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.4.15': {}
 
-  '@lint-md/cli@2.0.0(eslint@8.57.0)(typescript@5.4.5)':
-    dependencies:
-      '@attachments/eslint-config': 0.3.5(eslint@8.57.0)(typescript@5.4.5)
-      '@lint-md/core': 2.0.0
-      chalk: 4.1.2
-      commander: 9.5.0
-      fs-extra: 10.1.0
-      glob: 8.1.0
-      lodash: 4.17.21
-      piscina: 3.2.0
-      strip-ansi: 6.0.1
-      text-table: 0.2.0
-    transitivePeerDependencies:
-      - eslint
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
-      - supports-color
-      - typescript
-
-  '@lint-md/core@2.0.0':
-    dependencies:
-      '@lint-md/parser': 0.0.14
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - supports-color
-
   '@lint-md/parser@0.0.14':
     dependencies:
       '@types/unist': 2.0.10
@@ -4347,6 +4321,32 @@ snapshots:
       '@types/markdown-it': 14.0.1
     optionalDependencies:
       markdown-it: 14.1.0
+
+  '@naomi233/lint-md-cli@2.1.6(eslint@8.57.0)(typescript@5.4.5)':
+    dependencies:
+      '@attachments/eslint-config': 0.3.5(eslint@8.57.0)(typescript@5.4.5)
+      '@naomi233/lint-md-core': 2.1.6
+      chalk: 4.1.2
+      commander: 9.5.0
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      lodash: 4.17.21
+      piscina: 3.2.0
+      strip-ansi: 6.0.1
+      text-table: 0.2.0
+    transitivePeerDependencies:
+      - eslint
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+      - typescript
+
+  '@naomi233/lint-md-core@2.1.6':
+    dependencies:
+      '@lint-md/parser': 0.0.14
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - supports-color
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:

@@ -7,9 +7,9 @@
   "type": "module",
   "scripts": {
     "build": "vuepress-vite build docs",
-    "check": "lint-md --fix docs/**/*",
     "clean-dev": "vuepress-vite dev docs --clean-cache",
     "dev": "vuepress-vite dev docs",
+    "lint-md": "lint-md docs/**/*",
     "postinstall": "npx simple-git-hooks",
     "prettier": "prettier -w .",
     "update-package": "pnpm dlx vp-update"
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@lint-md/cli": "^2.0.0",
+    "@naomi233/lint-md-cli": "^2.1.6",
     "@vuepress/bundler-vite": "2.0.0-rc.9",
     "@vuepress/plugin-feed": "2.0.0-rc.26",
     "commitizen": "^4.3.0",
