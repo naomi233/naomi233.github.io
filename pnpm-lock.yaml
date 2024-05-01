@@ -584,11 +584,11 @@ packages:
         optional: true
 
   '@naomi233/lint-md-cli@2.1.6':
-    resolution: {integrity: sha512-5ChEkzYmnG2lD9SPhVFYdEB1VYZ6qUhOcQVX36xX8aCxLAAXbSIkU6WqQ+2GLgtVOne5FEfXAQB5HnFAwVxaIg==, tarball: https://registry.npmjs.org/@naomi233/lint-md-cli/-/lint-md-cli-2.1.6.tgz}
+    resolution: {integrity: sha512-5ChEkzYmnG2lD9SPhVFYdEB1VYZ6qUhOcQVX36xX8aCxLAAXbSIkU6WqQ+2GLgtVOne5FEfXAQB5HnFAwVxaIg==}
     hasBin: true
 
   '@naomi233/lint-md-core@2.1.6':
-    resolution: {integrity: sha512-EemTPbFhCxnrRSfdOBPK1H2mb2ceepr5o0nfxV/rph5V2NBJn3GcsMZuKK5+Xp4rGFmmK2AZ/+8NLkqCzDQODA==, tarball: https://registry.npmjs.org/@naomi233/lint-md-core/-/lint-md-core-2.1.6.tgz}
+    resolution: {integrity: sha512-EemTPbFhCxnrRSfdOBPK1H2mb2ceepr5o0nfxV/rph5V2NBJn3GcsMZuKK5+Xp4rGFmmK2AZ/+8NLkqCzDQODA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
