@@ -9,7 +9,7 @@
     "build": "vuepress-vite build docs",
     "clean-dev": "vuepress-vite dev docs --clean-cache",
     "dev": "vuepress-vite dev docs",
-    "lint-md": "lint-md docs/**/*",
+    "lint-md": "lint-md --fix docs/**/*",
     "postinstall": "npx simple-git-hooks",
     "prettier": "prettier -w .",
     "update-package": "pnpm dlx vp-update"
