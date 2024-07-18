@@ -41,7 +41,7 @@
     "prettier": "^3.3.3",
     "simple-git-hooks": "^2.11.1",
     "sort-package-json": "^2.10.0",
-    "vue": "^3.4.31",
+    "vue": "^3.4.32",
     "vuepress": "2.0.0-rc.14",
     "vuepress-plugin-search-pro": "2.0.0-rc.51",
     "vuepress-theme-hope": "2.0.0-rc.51"
