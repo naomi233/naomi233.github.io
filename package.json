@@ -33,17 +33,17 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@naomi233/lint-md-cli": "^2.1.6",
     "@vuepress/bundler-vite": "2.0.0-rc.14",
-    "@vuepress/plugin-back-to-top": "2.0.0-rc.38",
-    "@vuepress/plugin-feed": "2.0.0-rc.38",
+    "@vuepress/plugin-back-to-top": "2.0.0-rc.39",
+    "@vuepress/plugin-feed": "2.0.0-rc.39",
     "commitizen": "^4.3.0",
-    "cz-git": "^1.9.3",
+    "cz-git": "^1.9.4",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
     "simple-git-hooks": "^2.11.1",
     "sort-package-json": "^2.10.0",
-    "vue": "^3.4.32",
+    "vue": "^3.4.33",
     "vuepress": "2.0.0-rc.14",
-    "vuepress-plugin-search-pro": "2.0.0-rc.51",
-    "vuepress-theme-hope": "2.0.0-rc.51"
+    "vuepress-plugin-search-pro": "2.0.0-rc.52",
+    "vuepress-theme-hope": "2.0.0-rc.52"
   }
 }
