@@ -1,6 +1,6 @@
 ---
 title: 生活随想
-icon: alias
+icon: mdi:notebook-edit-outline
 index: false
 article: false
 ---
