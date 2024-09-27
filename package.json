@@ -15,35 +15,26 @@
     "update-package": "pnpm dlx vp-update"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
-    "commit-msg": "pnpm commitlint --edit $1"
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*.{js,ts,scss,md}": "prettier --write",
-    "*.md": "lint-md --fix",
-    "package.json": "sort-package-json"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git"
-    }
+    "*.md": "lint-md --fix"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
     "@naomi233/lint-md-cli": "^2.1.6",
-    "@vuepress/bundler-vite": "2.0.0-rc.14",
-    "@vuepress/plugin-back-to-top": "2.0.0-rc.40",
-    "@vuepress/plugin-feed": "2.0.0-rc.40",
-    "commitizen": "^4.3.0",
-    "cz-git": "^1.9.4",
-    "lint-staged": "^15.2.7",
+    "@vuepress/bundler-vite": "2.0.0-rc.15",
+    "@vuepress/plugin-back-to-top": "2.0.0-rc.47",
+    "@vuepress/plugin-feed": "2.0.0-rc.47",
+    "@vuepress/plugin-markdown-hint": "2.0.0-rc.47",
+    "@vuepress/plugin-redirect": "2.0.0-rc.51",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
+    "sass-embedded": "^1.79.3",
     "simple-git-hooks": "^2.11.1",
-    "sort-package-json": "^2.10.0",
-    "vue": "^3.4.34",
-    "vuepress": "2.0.0-rc.14",
-    "vuepress-plugin-search-pro": "2.0.0-rc.52",
-    "vuepress-theme-hope": "2.0.0-rc.52"
+    "vue": "^3.5.9",
+    "vuepress": "2.0.0-rc.15",
+    "vuepress-plugin-search-pro": "2.0.0-rc.54",
+    "vuepress-theme-hope": "2.0.0-rc.56"
   }
 }

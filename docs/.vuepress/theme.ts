@@ -52,12 +52,8 @@ export default hopeTheme({
       sub: true,
       sup: true,
       mark: true,
-      hint: true,
-      // echarts: true,
-      // mermaid: true,
       footnote: true,
       tasklist: true,
-      imgLazyload: true,
     },
 
     feed: {
