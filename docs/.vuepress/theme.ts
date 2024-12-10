@@ -41,6 +41,14 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
+  markdown: {
+    sub: true,
+    sup: true,
+    mark: true,
+    footnote: true,
+    tasklist: true,
+  },
+
   plugins: {
     catalog: true,
 
@@ -48,19 +56,11 @@ export default hopeTheme({
       excerptLength: 30,
     },
 
-    mdEnhance: {
-      sub: true,
-      sup: true,
-      mark: true,
-      footnote: true,
-      tasklist: true,
-    },
-
     feed: {
       rss: true,
     },
 
-    searchPro: {
+    slimsearch: {
       // 索引全部内容
       indexContent: true,
     },
