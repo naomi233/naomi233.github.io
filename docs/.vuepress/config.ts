@@ -21,6 +21,14 @@ export default defineUserConfig({
         "data-website-id": "0a51c413-8150-4511-9c99-87e2c17d935f",
       },
     ],
+    [
+      "script",
+      {
+        defer: true,
+        src: "https://static.cloudflareinsights.com/beacon.min.js",
+        "data-cf-beacon": '{"token": "93df9f90aa91498cb012734da1794cd0"}',
+      },
+    ],
   ],
   theme,
 })
