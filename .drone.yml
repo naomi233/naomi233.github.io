@@ -23,5 +23,6 @@ steps:
       - pnpm config set registry https://mirrors.tencent.com/npm/
       - pnpm config list
       - pnpm install --frozen-lockfile
+      - sed -i 's/naomi233.github.io/www.naomi.plus/' docs/.vuepress/theme.ts
       - sed -i "s#MIT Licensed#<a href='https://beian.miit.gov.cn/' target='_blank'>粤ICP备19151060号-2</a>#" docs/.vuepress/theme.ts
       - pnpm run build
