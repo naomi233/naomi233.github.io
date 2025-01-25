@@ -1,9 +1,9 @@
-name: GitHub pages deploy
+name: Gitea Actions Build
 
 on:
   push:
     paths-ignore:
-      - .gitea/**
+      - .github/**
       - .commitlintrc.cjs
       - .drone.yml
       - .editorconfig
@@ -13,36 +13,28 @@ on:
       - .prettierrc.cjs
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: build
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: https://gitee.com/actions-mirror/checkout@v4
         with:
           fetch-depth: 0
           # 如果你文档需要 Git 子模块，取消注释下一行
           # submodules: true
 
       - name: 安装 pnpm
-        uses: pnpm/action-setup@v4
+        uses: https://gitee.com/mys1024/actions-setup-pnpm@v4
         with:
           version: 9
 
       - name: 设置 Node.js
-        uses: actions/setup-node@v4
+        uses: https://gitee.com/actions-mirror/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
+          registry-url: https://mirrors.tencent.com/npm/
 
       - name: Install dependencies
         run: pnpm install
@@ -50,21 +42,13 @@ jobs:
       - name: Build artifact
         id: build
         env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: pnpm run build
+          NODE_OPTIONS: --max_old_space_size=2048
+        run: |-
+          sed -i 's/naomi233.github.io/www.naomi.plus/' docs/.vuepress/theme.ts
+          sed -i "s#MIT Licensed#<a href='https://beian.miit.gov.cn/' target='_blank'>粤ICP备19151060号-2</a>#" docs/.vuepress/theme.ts
+          pnpm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: https://gitee.com/actions-mirror/upload-artifact@v4
         with:
           path: dist
-
-  deploy-gh-pages:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

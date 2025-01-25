@@ -4,11 +4,11 @@ import sidebar from "./sidebar"
 
 export default hopeTheme({
   logo: "/logo.png",
-  hostname: "https://www.naomi.plus",
+  hostname: "https://naomi233.github.io",
 
   author: {
     name: "Naomi",
-    url: "https://www.naomi.plus",
+    url: "https://naomi233.github.io",
   },
 
   blog: {
@@ -18,7 +18,7 @@ export default hopeTheme({
     medias: {
       Telegram: "https://t.me/naomi233_bot",
       GitHub: "https://github.com/Henvy-Mango",
-      RSS: "https://www.naomi.plus/rss.xml",
+      RSS: "https://naomi233.github.io/rss.xml",
     },
     articleInfo: ["Author", "Date", "Word", "Category", "Tag"],
   },
