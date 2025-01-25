@@ -49,6 +49,6 @@ jobs:
           pnpm run build
 
       - name: Upload artifact
-        uses: https://gitee.com/actions-mirror/upload-artifact@v4
+        uses: https://gitee.com/actions-mirror/upload-artifact@v3
         with:
           path: dist
