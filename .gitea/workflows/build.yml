@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       volumes:
-        - /root/html/naomi.plus:/workspace/naomi/naomi233.github.io/dist
+        - /root/html/naomi.plus:/tmp/dist
     steps:
       - name: Checkout
         uses: https://gitee.com/actions-mirror/checkout@v4
@@ -50,6 +50,8 @@ jobs:
           sed -i 's/naomi233.github.io/www.naomi.plus/' docs/.vuepress/theme.ts
           sed -i "s#MIT Licensed#<a href='https://beian.miit.gov.cn/' target='_blank'>粤ICP备19151060号-2</a>#" docs/.vuepress/theme.ts
           pnpm run build
+          rm -rf /tmp/dist/*
+          cp -r dist/* /tmp/dist
 
       # - name: Upload artifact
       #   uses: https://gitee.com/actions-mirror/upload-artifact@v3
