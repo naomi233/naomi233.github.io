@@ -23,8 +23,6 @@ export default hopeTheme({
     articleInfo: ["Author", "Date", "Word", "Category", "Tag"],
   },
 
-  iconAssets: "iconify",
-
   docsDir: "docs",
   docsBranch: "master",
   repo: "naomi233/naomi233.github.io",
