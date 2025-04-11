@@ -30,7 +30,7 @@ jobs:
       - name: 安装 pnpm
         uses: https://gitee.com/mys1024/actions-setup-pnpm@v4
         with:
-          version: 9
+          version: 10
 
       - name: 设置 Node.js
         uses: https://gitee.com/actions-mirror/setup-node@v4
