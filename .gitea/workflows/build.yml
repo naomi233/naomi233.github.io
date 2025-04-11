@@ -22,10 +22,10 @@ jobs:
     steps:
       - name: Checkout
         uses: https://gitee.com/actions-mirror/checkout@v4
-        with:
-          fetch-depth: 0
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
+        # with:
+        #   fetch-depth: 0
+        #   如果你文档需要 Git 子模块，取消注释下一行
+        #   submodules: true
 
       - name: 安装 pnpm
         uses: https://gitee.com/mys1024/actions-setup-pnpm@v4
