@@ -28,8 +28,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        # with:
-        #   fetch-depth: 0
+        with:
+          fetch-depth: 0
         #   如果你文档需要 Git 子模块，取消注释下一行
         #   submodules: true
 
