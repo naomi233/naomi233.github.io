@@ -25,7 +25,7 @@ export default hopeTheme({
 
   docsDir: "docs",
   docsBranch: "master",
-  repo: "naomi233/naomi233.github.io",
+  repo: "https://github.com/naomi233/naomi233.github.io",
 
   displayFooter: true,
   footer: "MIT Licensed",
