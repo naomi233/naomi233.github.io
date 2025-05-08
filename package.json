@@ -23,20 +23,20 @@
   },
   "devDependencies": {
     "@naomi233/lint-md-cli": "^2.1.6",
-    "@vuepress/bundler-vite": "2.0.0-rc.21",
-    "@vuepress/plugin-back-to-top": "2.0.0-rc.94",
-    "@vuepress/plugin-feed": "2.0.0-rc.96",
-    "@vuepress/plugin-markdown-hint": "2.0.0-rc.94",
-    "@vuepress/plugin-markdown-tab": "2.0.0-rc.96",
-    "@vuepress/plugin-redirect": "2.0.0-rc.94",
-    "@vuepress/plugin-slimsearch": "2.0.0-rc.94",
-    "lint-staged": "^15.5.1",
+    "@vuepress/bundler-vite": "2.0.0-rc.22",
+    "@vuepress/plugin-back-to-top": "2.0.0-rc.102",
+    "@vuepress/plugin-feed": "2.0.0-rc.102",
+    "@vuepress/plugin-markdown-hint": "2.0.0-rc.102",
+    "@vuepress/plugin-markdown-tab": "2.0.0-rc.102",
+    "@vuepress/plugin-redirect": "2.0.0-rc.102",
+    "@vuepress/plugin-slimsearch": "2.0.0-rc.102",
+    "lint-staged": "^15.5.2",
     "prettier": "^3.5.3",
-    "sass-embedded": "^1.86.3",
-    "simple-git-hooks": "^2.12.1",
+    "sass-embedded": "^1.87.0",
+    "simple-git-hooks": "^2.13.0",
     "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.21",
-    "vuepress-theme-hope": "2.0.0-rc.82"
+    "vuepress": "2.0.0-rc.22",
+    "vuepress-theme-hope": "2.0.0-rc.86"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
