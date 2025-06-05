@@ -3,6 +3,7 @@ import theme from "./theme"
 
 export default defineUserConfig({
   lang: "zh-CN",
+  locales: { "/": { lang: "zh-CN" } },
   dest: "./dist",
   title: "Naomi樱花庄",
   description: "Naomi樱花庄",

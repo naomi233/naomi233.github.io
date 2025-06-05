@@ -14,7 +14,6 @@ export default hopeTheme({
   blog: {
     intro: "/about",
     avatar: "/assets/images/avatar.png",
-    sidebarDisplay: "mobile",
     medias: {
       Telegram: "https://t.me/naomi233_bot",
       GitHub: "https://github.com/Henvy-Mango",
