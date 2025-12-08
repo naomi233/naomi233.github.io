@@ -2,6 +2,7 @@ name: GitHub pages deploy
 
 on:
   push:
+    branches: [ master ]
     paths-ignore:
       - .gitea/**
       - .commitlintrc.cjs
@@ -11,6 +12,7 @@ on:
       - .markdownlint.json
       - .prettierignore
       - .prettierrc.cjs
+      - tsconfig.json
   workflow_dispatch:
 
 permissions:
