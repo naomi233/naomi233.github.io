@@ -2,7 +2,7 @@ name: GitHub pages deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
     paths-ignore:
       - .gitea/**
       - .commitlintrc.cjs
