@@ -49,7 +49,6 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=2048
         run: |-
-          sed -i 's/naomi233.github.io/www.naomi.plus/' docs/.vuepress/theme.ts
           sed -i "s#MIT Licensed#<a href='https://beian.miit.gov.cn/' target='_blank'>粤ICP备19151060号-2</a>#" docs/.vuepress/theme.ts
           pnpm run build
           rm -rf /tmp/dist/*
