@@ -10,10 +10,15 @@
     "no-empty-blockquote": 1,
     "no-special-characters": 1,
     "use-standard-ellipsis": 1,
-    "no-fullwidth-number": 1,
+    "no-full-width-number": 1,
     "no-space-in-link": 1,
     "no-multiple-space-blockquote": 1,
     "correct-title-trailing-punctuation": 1,
-    "no-space-in-inline-code": 1
+    "no-space-in-inline-code": 1,
+    "no-long-code": 1,
+    "no-half-width-punctuation": 1,
+    "space-around-link": 1,
+    "require-trailing-spaces": 0,
+    "no-multiple-blank-lines": 0
   }
 }

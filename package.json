@@ -10,7 +10,7 @@
     "clean-dev": "vuepress-vite dev docs --clean-cache",
     "dev": "vuepress-vite dev docs",
     "postinstall": "npx simple-git-hooks",
-    "lint-md": "lint-md --fix docs/**/*",
+    "lint-md": "lint-md --fix \"docs/**/*.md\"",
     "prettier": "prettier -w .",
     "update-package": "pnpm dlx vp-update"
   },
@@ -22,7 +22,7 @@
     "*.md": "lint-md --fix"
   },
   "devDependencies": {
-    "@naomi233/lint-md-cli": "^2.1.6",
+    "@lint-md/cli": "^2.3.1",
     "@vuepress/bundler-vite": "2.0.0-rc.30",
     "@vuepress/plugin-back-to-top": "2.0.0-rc.131",
     "@vuepress/plugin-feed": "2.0.0-rc.132",
