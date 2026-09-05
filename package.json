@@ -18,7 +18,7 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,scss,md}": "prettier --write",
+    "*.{js,ts,scss,md}": "prettier -w",
     "*.md": "lint-md --fix"
   },
   "devDependencies": {
@@ -32,6 +32,7 @@
     "@vuepress/plugin-search": "2.0.0-rc.131",
     "lint-staged": "^17.4.1",
     "prettier": "^3.9.6",
+    "prettier-plugin-compact-markdown-table": "^0.1.0",
     "sass-embedded": "^1.103.1",
     "simple-git-hooks": "^2.14.0",
     "vue": "^3.5.42",

@@ -1,5 +1,6 @@
 /** @type {import('prettier').Config} */
 module.exports = {
+  plugins: ["prettier-plugin-compact-markdown-table"],
   // 一行最多多少个字符
   printWidth: 120,
   // 指定每个缩进级别的空格数
