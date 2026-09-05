@@ -7,6 +7,8 @@ export default defineUserConfig({
   title: "Naomi樱花庄",
   description: "Naomi樱花庄",
   head: [
+    ["script", { charset: "UTF-8", id: "LA_COLLECT", src: "//sdk.51.la/js-sdk-pro.min.js" }],
+    ["script", {}, "LA.init({id:'3R6XmoEALv1KIi6i',ck:'3R6XmoEALv1KIi6i'})"],
     ["script", { async: true, src: "https://www.googletagmanager.com/gtag/js?id=G-X1V1VJF5XQ" }],
     [
       "script",
