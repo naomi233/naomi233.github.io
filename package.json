@@ -18,8 +18,8 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,ts,scss,md}": "prettier -w",
-    "*.md": "lint-md --fix"
+    "*.md": "lint-md --fix",
+    "*.{js,ts,scss,md}": "prettier -w"
   },
   "devDependencies": {
     "@lint-md/cli": "^2.4.0",
