@@ -61,6 +61,6 @@ export default hopeTheme({
       canonical: "https://www.naomi233.cn",
     },
 
-    search: true,
+    slimsearch: true,
   },
 })
